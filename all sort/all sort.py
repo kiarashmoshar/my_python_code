@@ -4,7 +4,7 @@ import time
 import copy
 size1 = 100
 size2 = 10000
-size3 = 1000000
+size3 = 100000
 span = 1000000
 threshold = 20
 
