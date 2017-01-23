@@ -18,5 +18,18 @@ def sqrt2(number):
     return ans
 
 
+def sqrt3(number):
+    ans=0
+    while ans*ans<=number:
+        if(ans*ans==number):
+            return ans
+        else:
+            ans+=1
+    if(ans*ans>number):
+        print(number," is not perfect")
+
+
 print sqrt(16,4)
 print sqrt2(15)
+
+print sqrt3(17)
