@@ -149,250 +149,250 @@ def quick_selection(x, first, last):
 		if minIndex != i:
 			x[i], x[minIndex] = x[minIndex], x[i]
 
-# #--------------RANDOM ORDER----------------------
-# #------------------------------------------------
-# # size = 100
-# #------------------------------------------------
-# print("\nRandom Order\n---------------------------------")
-# w = [random.randint(0, span) for a in range(0, size1)]
-# t1 = time.clock()
-# insertion_sort3(w)
-# print("Insertion Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size1)]
-# t1 = time.clock()
-# selection_sort(w)
-# print("Selection Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size1)]
-# t1 = time.clock()
-# bubble_sort2(w)
-# print("Bubble Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size1)]
-# t1 = time.clock()
-# merge_sort(w)
-# print("Merge Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size1)]
-# t1 = time.clock()
-# quick_sort(w)
-# print("Quick Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size1)]
-# t1 = time.clock()
-# w.sort()
-# print("Tim Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
-# #------------------------------------------------
-# # size = 10,000
-# #------------------------------------------------
-# w = [random.randint(0, span) for a in range(0, size2)]
-# t1 = time.clock()
-# insertion_sort3(w)
-# print("Insertion Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size2)]
-# t1 = time.clock()
-# selection_sort(w)
-# print("Selection Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size2)]
-# t1 = time.clock()
-# bubble_sort2(w)
-# print("Bubble Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size2)]
-# t1 = time.clock()
-# merge_sort(w)
-# print("Merge Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size2)]
-# t1 = time.clock()
-# quick_sort(w)
-# print("Quick Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size2)]
-# t1 = time.clock()
-# w.sort()
-# print("Tim Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-# #------------------------------------------------
-# # size = 1,000,000
-# #------------------------------------------------
-# w = [random.randint(0, span) for a in range(0, size3)]
-# t1 = time.clock()
-# merge_sort(w)
-# print("Merge Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size3)]
-# t1 = time.clock()
-# quick_sort(w)
-# print("Quick Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, span) for a in range(0, size3)]
-# t1 = time.clock()
-# w.sort()
-# print("Tim Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# # ----------------ALREADY SORTED-----------------
-# #------------------------------------------------
-# # size = 10,000
-# #------------------------------------------------
-# print("\nAlready Sorted\n---------------------------------")
-#
-# w = [a for a in range(0, size2)]
-# t1 = time.clock()
-# insertion_sort3(w)
-# print("Insertion Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# t1 = time.clock()
-# selection_sort(w)
-# print("Selection Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# t1 = time.clock()
-# bubble_sort2(w)
-# print("Bubble Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# t1 = time.clock()
-# merge_sort(w)
-# print("Merge Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# t1 = time.clock()
-# quick_sort(w)
-# print("Quick Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# t1 = time.clock()
-# w.sort()
-# print("Tim Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-# #------------------------------------------------
-# # size = 1,000,000
-# #------------------------------------------------
-# w = [a for a in range(0, size3)]
-# t1 = time.clock()
-# merge_sort(w)
-# print("Merge Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# t1 = time.clock()
-# quick_sort(w)
-# print("Quick Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# t1 = time.clock()
-# w.sort()
-# print("Tim Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# # ----------------REVERSE SORTED-----------------
-# #------------------------------------------------
-# # size = 10,000
-# #------------------------------------------------
-# print("\nReverse Sorted\n---------------------------------")
-#
-# w = [a for a in range(0, size2)]
-# w.reverse()
-# t1 = time.clock()
-# insertion_sort3(w)
-# print("Insertion Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [a for a in range(0, size2)]
-# w.reverse()
-# t1 = time.clock()
-# selection_sort(w)
-# print("Selection Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [a for a in range(0, size2)]
-# w.reverse()
-# t1 = time.clock()
-# bubble_sort2(w)
-# print("Bubble Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [a for a in range(0, size2)]
-# w.reverse()
-# t1 = time.clock()
-# merge_sort(w)
-# print("Merge Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [a for a in range(0, size2)]
-# w.reverse()
-# t1 = time.clock()
-# quick_sort(w)
-# print("Quick Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [a for a in range(0, size2)]
-# w.reverse()
-# t1 = time.clock()
-# w.sort()
-# print("Tim Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-# #------------------------------------------------
-# # size = 1,000,000
-# #------------------------------------------------
-# w = [a for a in range(0, size3)]
-# w.reverse()
-# t1 = time.clock()
-# merge_sort(w)
-# print("Merge Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# w = [a for a in range(0, size3)]
-# w.reverse()
-# t1 = time.clock()
-# quick_sort(w)
-# print("Quick Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# w = [a for a in range(0, size3)]
-# w.reverse()
-# t1 = time.clock()
-# w.sort()
-# print("Tim Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# #--------------RANDOM ORDER, MANY DUPLICATES------------------
-# #------------------------------------------------
-# # size = 10,000
-# #------------------------------------------------
-# print("\nRandom Order, Many Duplicates\n---------------------------------")
-#
-# w = [random.randint(0, size2//10) for a in range(0, size2)]
-# t1 = time.clock()
-# insertion_sort3(w)
-# print("Insertion Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, size2//10) for a in range(0, size2)]
-# t1 = time.clock()
-# selection_sort(w)
-# print("Selection Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0,size2//10) for a in range(0, size2)]
-# t1 = time.clock()
-# bubble_sort2(w)
-# print("Bubble Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, size2//10) for a in range(0, size2)]
-# t1 = time.clock()
-# merge_sort(w)
-# print("Merge Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, size2//10) for a in range(0, size2)]
-# t1 = time.clock()
-# quick_sort(w)
-# print("Quick Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, size2//10) for a in range(0, size2)]
-# t1 = time.clock()
-# w.sort()
-# print("Tim Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
-# #------------------------------------------------
-# # size = 1,000,000
-# #------------------------------------------------
-# w = [random.randint(0, size2//10) for a in range(0, size3)]
-# t1 = time.clock()
-# merge_sort(w)
-# print("Merge Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, size2//10) for a in range(0, size3)]
-# t1 = time.clock()
-# #quick_sort(w)
-# #print("Quick Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
-#
-# w = [random.randint(0, size2//10) for a in range(0, size3)]
-# t1 = time.clock()
-# w.sort()
-# print("Tim Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+#--------------RANDOM ORDER----------------------
+#------------------------------------------------
+# size = 100
+#------------------------------------------------
+print("\nRandom Order\n---------------------------------")
+w = [random.randint(0, span) for a in range(0, size1)]
+t1 = time.clock()
+insertion_sort3(w)
+print("Insertion Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size1)]
+t1 = time.clock()
+selection_sort(w)
+print("Selection Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size1)]
+t1 = time.clock()
+bubble_sort2(w)
+print("Bubble Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size1)]
+t1 = time.clock()
+merge_sort(w)
+print("Merge Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size1)]
+t1 = time.clock()
+quick_sort(w)
+print("Quick Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size1)]
+t1 = time.clock()
+w.sort()
+print("Tim Sort(size=", str(size1),"): ", (time.clock()-t1) * 1000)
+#------------------------------------------------
+# size = 10,000
+#------------------------------------------------
+w = [random.randint(0, span) for a in range(0, size2)]
+t1 = time.clock()
+insertion_sort3(w)
+print("Insertion Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size2)]
+t1 = time.clock()
+selection_sort(w)
+print("Selection Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size2)]
+t1 = time.clock()
+bubble_sort2(w)
+print("Bubble Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size2)]
+t1 = time.clock()
+merge_sort(w)
+print("Merge Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size2)]
+t1 = time.clock()
+quick_sort(w)
+print("Quick Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size2)]
+t1 = time.clock()
+w.sort()
+print("Tim Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+#------------------------------------------------
+# size = 1,000,000
+#------------------------------------------------
+w = [random.randint(0, span) for a in range(0, size3)]
+t1 = time.clock()
+merge_sort(w)
+print("Merge Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size3)]
+t1 = time.clock()
+quick_sort(w)
+print("Quick Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, span) for a in range(0, size3)]
+t1 = time.clock()
+w.sort()
+print("Tim Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+# ----------------ALREADY SORTED-----------------
+#------------------------------------------------
+# size = 10,000
+#------------------------------------------------
+print("\nAlready Sorted\n---------------------------------")
+
+w = [a for a in range(0, size2)]
+t1 = time.clock()
+insertion_sort3(w)
+print("Insertion Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+t1 = time.clock()
+selection_sort(w)
+print("Selection Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+t1 = time.clock()
+bubble_sort2(w)
+print("Bubble Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+t1 = time.clock()
+merge_sort(w)
+print("Merge Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+t1 = time.clock()
+quick_sort(w)
+print("Quick Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+t1 = time.clock()
+w.sort()
+print("Tim Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+#------------------------------------------------
+# size = 1,000,000
+#------------------------------------------------
+w = [a for a in range(0, size3)]
+t1 = time.clock()
+merge_sort(w)
+print("Merge Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+t1 = time.clock()
+quick_sort(w)
+print("Quick Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+t1 = time.clock()
+w.sort()
+print("Tim Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+# ----------------REVERSE SORTED-----------------
+#------------------------------------------------
+# size = 10,000
+#------------------------------------------------
+print("\nReverse Sorted\n---------------------------------")
+
+w = [a for a in range(0, size2)]
+w.reverse()
+t1 = time.clock()
+insertion_sort3(w)
+print("Insertion Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [a for a in range(0, size2)]
+w.reverse()
+t1 = time.clock()
+selection_sort(w)
+print("Selection Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [a for a in range(0, size2)]
+w.reverse()
+t1 = time.clock()
+bubble_sort2(w)
+print("Bubble Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [a for a in range(0, size2)]
+w.reverse()
+t1 = time.clock()
+merge_sort(w)
+print("Merge Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [a for a in range(0, size2)]
+w.reverse()
+t1 = time.clock()
+quick_sort(w)
+print("Quick Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [a for a in range(0, size2)]
+w.reverse()
+t1 = time.clock()
+w.sort()
+print("Tim Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+#------------------------------------------------
+# size = 1,000,000
+#------------------------------------------------
+w = [a for a in range(0, size3)]
+w.reverse()
+t1 = time.clock()
+merge_sort(w)
+print("Merge Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+w = [a for a in range(0, size3)]
+w.reverse()
+t1 = time.clock()
+quick_sort(w)
+print("Quick Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+w = [a for a in range(0, size3)]
+w.reverse()
+t1 = time.clock()
+w.sort()
+print("Tim Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+#--------------RANDOM ORDER, MANY DUPLICATES------------------
+#------------------------------------------------
+# size = 10,000
+#------------------------------------------------
+print("\nRandom Order, Many Duplicates\n---------------------------------")
+
+w = [random.randint(0, size2//10) for a in range(0, size2)]
+t1 = time.clock()
+insertion_sort3(w)
+print("Insertion Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, size2//10) for a in range(0, size2)]
+t1 = time.clock()
+selection_sort(w)
+print("Selection Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0,size2//10) for a in range(0, size2)]
+t1 = time.clock()
+bubble_sort2(w)
+print("Bubble Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, size2//10) for a in range(0, size2)]
+t1 = time.clock()
+merge_sort(w)
+print("Merge Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, size2//10) for a in range(0, size2)]
+t1 = time.clock()
+quick_sort(w)
+print("Quick Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, size2//10) for a in range(0, size2)]
+t1 = time.clock()
+w.sort()
+print("Tim Sort(size=", str(size2),"): ", (time.clock()-t1) * 1000)
+#------------------------------------------------
+# size = 1,000,000
+#------------------------------------------------
+w = [random.randint(0, size2//10) for a in range(0, size3)]
+t1 = time.clock()
+merge_sort(w)
+print("Merge Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, size2//10) for a in range(0, size3)]
+t1 = time.clock()
+#quick_sort(w)
+#print("Quick Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
+
+w = [random.randint(0, size2//10) for a in range(0, size3)]
+t1 = time.clock()
+w.sort()
+print("Tim Sort(size=", str(size3),"): ", (time.clock()-t1) * 1000)
 
 thelist=[3,2,7,9,0]
 print thelist
